@@ -1,0 +1,556 @@
+/* --------------------------------
+
+Nucleo Outline Web Font - nucleoapp.com/
+License - nucleoapp.com/license/
+Created using IcoMoon - icomoon.io
+
+-------------------------------- */
+
+@font-face {
+  font-family: 'Nucleo Outline';
+  src: url('../fonts/nucleo-outline.eot');
+  src: url('../fonts/nucleo-outline.eot') format('embedded-opentype'),
+  url('../fonts/nucleo-outline.woff2') format('woff2'),
+  url('../fonts/nucleo-outline.woff') format('woff'),
+  url('../fonts/nucleo-outline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+.ground-ui-icons {
+  display: inline-block;
+  font: normal normal normal 14px/1 'Nucleo Outline';
+  font-size: inherit;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  change icon size
+-------------------------*/
+
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+
+.ground-ui-icons.circle {
+  padding: 0.33333333em;
+  vertical-align: -16%;
+  background-color: #eee;
+}
+
+.ground-ui-icons.circle {
+  border-radius: 50%;
+}
+
+/*------------------------
+  list icons
+-------------------------*/
+
+.nc-icon-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+
+.nc-icon-ul > li {
+  position: relative;
+}
+
+.nc-icon-ul > li > .ground-ui-icons {
+  position: absolute;
+  left: -1.57142857em;
+  top: 0.14285714em;
+  text-align: center;
+}
+
+.nc-icon-ul > li > .ground-ui-icons.circle {
+  top: -0.19047619em;
+  left: -1.9047619em;
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+.ground-ui-icons.spin {
+  -webkit-animation: nc-icon-spin 2s infinite linear;
+  -moz-animation: nc-icon-spin 2s infinite linear;
+  animation: nc-icon-spin 2s infinite linear;
+}
+
+@-webkit-keyframes nc-icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes nc-icon-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes nc-icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+
+/*------------------------
+	font icons
+-------------------------*/
+
+.ground-ui-icons.ui-1_check:before{
+    content: "\ea22";
+}
+
+.ground-ui-icons.ui-1_email-85:before {
+  content: "\ea2a";
+}
+
+.ground-ui-icons.arrows-1_cloud-download-93:before {
+  content: "\ea21";
+}
+
+.ground-ui-icons.arrows-1_cloud-upload-94:before {
+  content: "\ea24";
+}
+
+.ground-ui-icons.arrows-1_minimal-down:before {
+  content: "\ea39";
+}
+
+.ground-ui-icons.arrows-1_minimal-left:before {
+  content: "\ea3a";
+}
+
+.ground-ui-icons.arrows-1_minimal-right:before {
+  content: "\ea3b";
+}
+
+.ground-ui-icons.arrows-1_minimal-up:before {
+  content: "\ea3c";
+}
+
+.ground-ui-icons.arrows-1_refresh-69:before {
+  content: "\ea44";
+}
+
+.ground-ui-icons.arrows-1_share-66:before {
+  content: "\ea4c";
+}
+
+.ground-ui-icons.business_badge:before {
+  content: "\ea09";
+}
+
+.ground-ui-icons.business_bank:before {
+  content: "\ea0a";
+}
+
+.ground-ui-icons.business_briefcase-24:before {
+  content: "\ea13";
+}
+
+.ground-ui-icons.business_bulb-63:before {
+  content: "\ea15";
+}
+
+.ground-ui-icons.business_chart-bar-32:before {
+  content: "\ea1e";
+}
+
+.ground-ui-icons.business_chart-pie-36:before {
+  content: "\ea1f";
+}
+
+.ground-ui-icons.business_globe:before {
+  content: "\ea2f";
+}
+
+.ground-ui-icons.business_money-coins:before {
+  content: "\ea40";
+}
+
+.ground-ui-icons.clothes_tie-bow:before {
+  content: "\ea5b";
+}
+
+.ground-ui-icons.design_vector:before {
+  content: "\ea61";
+}
+
+.ground-ui-icons.design_app:before {
+  content: "\ea08";
+}
+
+.ground-ui-icons.design_bullet-list-67:before {
+  content: "\ea14";
+}
+
+.ground-ui-icons.design_image:before {
+  content: "\ea33";
+}
+
+.ground-ui-icons.design_palette:before {
+  content: "\ea41";
+}
+
+.ground-ui-icons.design_scissors:before {
+  content: "\ea4a";
+}
+
+.ground-ui-icons.design-2_html5:before {
+  content: "\ea32";
+}
+
+.ground-ui-icons.design-2_ruler-pencil:before {
+  content: "\ea48";
+}
+
+.ground-ui-icons.emoticons_satisfied:before {
+  content: "\ea49";
+}
+
+.ground-ui-icons.files_box:before {
+  content: "\ea12";
+}
+
+.ground-ui-icons.files_paper:before {
+  content: "\ea43";
+}
+
+.ground-ui-icons.files_single-copy-04:before {
+  content: "\ea52";
+}
+
+.ground-ui-icons.health_ambulance:before {
+  content: "\ea07";
+}
+
+.ground-ui-icons.loader_gear:before {
+  content: "\ea4e";
+}
+
+.ground-ui-icons.loader_refresh:before {
+  content: "\ea44";
+}
+
+.ground-ui-icons.location_bookmark:before {
+  content: "\ea10";
+}
+
+.ground-ui-icons.location_compass-05:before {
+  content: "\ea25";
+}
+
+.ground-ui-icons.location_map-big:before {
+  content: "\ea3d";
+}
+
+.ground-ui-icons.location_pin:before {
+  content: "\ea47";
+}
+
+.ground-ui-icons.location_world:before {
+  content: "\ea63";
+}
+
+.ground-ui-icons.media-1_album:before {
+  content: "\ea02";
+}
+
+.ground-ui-icons.media-1_button-pause:before {
+  content: "\ea16";
+}
+
+.ground-ui-icons.media-1_button-play:before {
+  content: "\ea18";
+}
+
+.ground-ui-icons.media-1_button-power:before {
+  content: "\ea19";
+}
+
+.ground-ui-icons.media-1_camera-compact:before {
+  content: "\ea1c";
+}
+
+.ground-ui-icons.media-2_note-03:before {
+  content: "\ea3f";
+}
+
+.ground-ui-icons.media-2_sound-wave:before {
+  content: "\ea57";
+}
+
+.ground-ui-icons.objects_diamond:before {
+  content: "\ea29";
+}
+
+.ground-ui-icons.objects_globe:before {
+  content: "\ea2f";
+}
+
+.ground-ui-icons.objects_key-25:before {
+  content: "\ea38";
+}
+
+.ground-ui-icons.objects_planet:before {
+  content: "\ea46";
+}
+
+.ground-ui-icons.objects_spaceship:before {
+  content: "\ea55";
+}
+
+.ground-ui-icons.objects_support-17:before {
+  content: "\ea56";
+}
+
+.ground-ui-icons.objects_umbrella-13:before {
+  content: "\ea5f";
+}
+
+.ground-ui-icons.education_agenda-bookmark:before {
+  content: "\ea01";
+}
+
+.ground-ui-icons.education_atom:before {
+  content: "\ea0c";
+}
+
+.ground-ui-icons.education_glasses:before {
+  content: "\ea2d";
+}
+
+.ground-ui-icons.education_hat:before {
+  content: "\ea30";
+}
+
+.ground-ui-icons.education_paper:before {
+  content: "\ea42";
+}
+
+.ground-ui-icons.shopping_bag-16:before {
+  content: "\ea0d";
+}
+
+.ground-ui-icons.shopping_basket:before {
+  content: "\ea0b";
+}
+
+.ground-ui-icons.shopping_box:before {
+  content: "\ea11";
+}
+
+.ground-ui-icons.shopping_cart-simple:before {
+  content: "\ea1d";
+}
+
+.ground-ui-icons.shopping_credit-card:before {
+  content: "\ea28";
+}
+
+.ground-ui-icons.shopping_delivery-fast:before {
+  content: "\ea27";
+}
+
+.ground-ui-icons.shopping_shop:before {
+  content: "\ea50";
+}
+
+.ground-ui-icons.shopping_tag-content:before {
+  content: "\ea59";
+}
+
+.ground-ui-icons.sport_trophy:before {
+  content: "\ea5d";
+}
+
+.ground-ui-icons.sport_user-run:before {
+  content: "\ea60";
+}
+
+.ground-ui-icons.tech_controller-modern:before {
+  content: "\ea26";
+}
+
+.ground-ui-icons.tech_headphones:before {
+  content: "\ea31";
+}
+
+.ground-ui-icons.tech_laptop:before {
+  content: "\ea36";
+}
+
+.ground-ui-icons.tech_mobile:before {
+  content: "\ea3e";
+}
+
+.ground-ui-icons.tech_tablet:before {
+  content: "\ea58";
+}
+
+.ground-ui-icons.tech_tv:before {
+  content: "\ea5e";
+}
+
+.ground-ui-icons.tech_watch-time:before {
+  content: "\ea62";
+}
+
+.ground-ui-icons.text_align-center:before {
+  content: "\ea05";
+}
+
+.ground-ui-icons.text_align-left:before {
+  content: "\ea06";
+}
+
+.ground-ui-icons.text_bold:before {
+  content: "\ea0e";
+}
+
+.ground-ui-icons.text_caps-small:before {
+  content: "\ea1b";
+}
+
+.ground-ui-icons.gestures_tap-01:before {
+  content: "\ea5a";
+}
+
+.ground-ui-icons.transportation_air-baloon:before {
+  content: "\ea03";
+}
+
+.ground-ui-icons.transportation_bus-front-12:before {
+  content: "\ea17";
+}
+
+.ground-ui-icons.travel_info:before {
+  content: "\ea04";
+}
+
+.ground-ui-icons.travel_istanbul:before {
+  content: "\ea34";
+}
+
+.ground-ui-icons.ui-1_bell-53:before {
+  content: "\ea0f";
+}
+
+.ground-ui-icons.ui-1_calendar-60:before {
+  content: "\ea1a";
+}
+
+.ground-ui-icons.ui-1_lock-circle-open:before {
+  content: "\ea35";
+}
+
+.ground-ui-icons.ui-1_send:before {
+  content: "\ea4d";
+}
+
+.ground-ui-icons.ui-1_settings-gear-63:before {
+  content: "\ea4e";
+}
+
+.ground-ui-icons.ui-1_simple-add:before {
+  content: "\ea4f";
+}
+
+.ground-ui-icons.ui-1_simple-delete:before {
+  content: "\ea54";
+}
+
+.ground-ui-icons.ui-1_simple-remove:before {
+  content: "\ea53";
+}
+
+.ground-ui-icons.ui-1_zoom-bold:before {
+  content: "\ea64";
+}
+
+.ground-ui-icons.ui-2_chat-round:before {
+  content: "\ea20";
+}
+
+.ground-ui-icons.ui-2_favourite-28:before {
+  content: "\ea2b";
+}
+
+.ground-ui-icons.ui-2_like:before {
+  content: "\ea37";
+}
+
+.ground-ui-icons.ui-2_settings-90:before {
+  content: "\ea4b";
+}
+
+.ground-ui-icons.ui-2_time-alarm:before {
+  content: "\ea5c";
+}
+
+.ground-ui-icons.users_circle-08:before {
+  content: "\ea23";
+}
+
+.ground-ui-icons.users_single-02:before {
+  content: "\ea51";
+}
+
+.all-icons .font-icon-detail {
+    text-align: center;
+    padding: 45px 0px 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.1875rem;
+    margin: 15px 0;
+    min-height: 168px;
+}
+
+.all-icons [class*="ground-ui-icons"] {
+    font-size: 32px;
+}
+
+.all-icons .font-icon-detail p {
+    margin: 25px auto 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #B8B8B8;
+    padding:0 10px;
+    font-size: 0.7142em;
+}

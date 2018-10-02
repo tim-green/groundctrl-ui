@@ -1,0 +1,41 @@
+/*!
+
+ =========================================================
+
+
+ */
+
+@import 'ground-ui-dashboard/variables';
+@import 'ground-ui-dashboard/mixins';
+
+// Plugins CSS
+@import "ground-ui-dashboard/plugins/plugin-animate-bootstrap-notify";
+@import "ground-ui-dashboard/plugins/plugin-perfect-scrollbar";
+
+// Core CSS
+@import "ground-ui-dashboard/buttons";
+@import "ground-ui-dashboard/inputs";
+@import "ground-ui-dashboard/typography";
+@import "ground-ui-dashboard/misc";
+@import "ground-ui-dashboard/checkboxes-radio";
+
+// components
+@import "ground-ui-dashboard/navbar";
+@import "ground-ui-dashboard/page-header";
+@import "ground-ui-dashboard/dropdown";
+@import "ground-ui-dashboard/alerts";
+@import "ground-ui-dashboard/images";
+@import "ground-ui-dashboard/nucleo-outline";
+@import "ground-ui-dashboard/tables";
+@import "ground-ui-dashboard/sidebar-and-main-panel";
+@import "ground-ui-dashboard/footers";
+@import "ground-ui-dashboard/fixed-plugin";
+
+// cards
+@import "ground-ui-dashboard/cards";
+@import "ground-ui-dashboard/cards/card-plain";
+@import "ground-ui-dashboard/cards/card-chart";
+@import "ground-ui-dashboard/cards/card-user";
+@import "ground-ui-dashboard/cards/card-map";
+
+@import "ground-ui-dashboard/responsive";
