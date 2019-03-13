@@ -1,102 +1,18 @@
 import React from "react";
 import { Row, Col, Card, CardHeader, CardBody } from "reactstrap";
-// react plugin used to create google maps
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap,
-  Marker
-} from "react-google-maps";
-
+// react plugin used to create mapbox maps urbica/react-map-gl - github
+import MapGL from '@urbica/react-map-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import { PanelHeader } from "components";
 
-const MapWrapper = withScriptjs(
-  withGoogleMap(props => (
-    <GoogleMap
-      defaultZoom={1}
-      defaultCenter={{ lat: 6.8195503, lng: -144.8049019}}
-      defaultOptions={{
-        scrollwheel: false,
-        styles: [
-          {
-            featureType: "water",
-            elementType: "geometry",
-            stylers: [{ color: "#e9e9e9" }, { lightness: 17 }]
-          },
-          {
-            featureType: "landscape",
-            elementType: "geometry",
-            stylers: [{ color: "#f5f5f5" }, { lightness: 20 }]
-          },
-          {
-            featureType: "road.highway",
-            elementType: "geometry.fill",
-            stylers: [{ color: "#ffffff" }, { lightness: 17 }]
-          },
-          {
-            featureType: "road.highway",
-            elementType: "geometry.stroke",
-            stylers: [{ color: "#ffffff" }, { lightness: 29 }, { weight: 0.2 }]
-          },
-          {
-            featureType: "road.arterial",
-            elementType: "geometry",
-            stylers: [{ color: "#ffffff" }, { lightness: 18 }]
-          },
-          {
-            featureType: "road.local",
-            elementType: "geometry",
-            stylers: [{ color: "#ffffff" }, { lightness: 16 }]
-          },
-          {
-            featureType: "poi",
-            elementType: "geometry",
-            stylers: [{ color: "#f5f5f5" }, { lightness: 21 }]
-          },
-          {
-            featureType: "poi.park",
-            elementType: "geometry",
-            stylers: [{ color: "#dedede" }, { lightness: 21 }]
-          },
-          {
-            elementType: "labels.text.stroke",
-            stylers: [
-              { visibility: "on" },
-              { color: "#ffffff" },
-              { lightness: 16 }
-            ]
-          },
-          {
-            elementType: "labels.text.fill",
-            stylers: [
-              { saturation: 36 },
-              { color: "#333333" },
-              { lightness: 40 }
-            ]
-          },
-          { elementType: "labels.icon", stylers: [{ visibility: "off" }] },
-          {
-            featureType: "transit",
-            elementType: "geometry",
-            stylers: [{ color: "#f2f2f2" }, { lightness: 19 }]
-          },
-          {
-            featureType: "administrative",
-            elementType: "geometry.fill",
-            stylers: [{ color: "#fefefe" }, { lightness: 20 }]
-          },
-          {
-            featureType: "administrative",
-            elementType: "geometry.stroke",
-            stylers: [{ color: "#fefefe" }, { lightness: 17 }, { weight: 1.2 }]
-          }
-        ]
-      }}
-    >
-      <Marker position={{ lat: 40.748817, lng: -73.985428 }} />
-    </GoogleMap>
-  ))
-);
+const InteractMapBox = {
+  viewport: {
+    latitude: -25.047944,
+    longitude: 134.003347,
+    zoom: 3
+  }
+};
+
 
 class FullScreenMap extends React.Component {
   render() {
@@ -108,20 +24,19 @@ class FullScreenMap extends React.Component {
             <Col xs={12}>
               <Card>
                 <CardHeader>
-                  <h3 className="title">Maps by Google</h3>
+                  <h3 className="title">Maps by Mapbox</h3>
                 </CardHeader>
                 <CardBody>
-                  <div
-                    id="map"
-                    className="map"
-                    style={{ position: "relative", overflow: "hidden" }}
-                  >
-                    <MapWrapper
-                      googleMapURL="https://maps.googleapis.com/maps/api/js?"
-                      loadingElement={<div style={{ height: `100%` }} />}
-                      containerElement={<div style={{ height: `100%` }} />}
-                      mapElement={<div style={{ height: `100%` }} />}
-                    />
+                  <div id="map" className="map" >
+                      <MapGL
+                        style={{ width: '100%', height: '100%' }}
+                        mapStyle='mapbox://styles/mapbox/streets-v11'
+                        accessToken={'pk.eyJ1IjoiYmx1cmNyZWF0aXZlIiwiYSI6ImNqcmQ2cDN0dzBiYzg0M3FmY3E4NnM0bm8ifQ.ItKKVhLrdHbtJ7zfAQeG1Q'}
+                        latitude={InteractMapBox.viewport.latitude}
+                        longitude={InteractMapBox.viewport.longitude}
+                        zoom={InteractMapBox.viewport.zoom}
+                        onViewportChange={InteractMapBox.viewport}
+                  />
                   </div>
                 </CardBody>
               </Card>
