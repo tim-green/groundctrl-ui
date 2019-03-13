@@ -24,6 +24,8 @@
         <!--     Fonts and icons     -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
         <title>GroundCTRL Dashboard - React UI Kit - WIP</title>
     </head>
     <body>
@@ -41,5 +43,13 @@
             To begin the development, run `npm start` or `yarn start`.
             To create a production bundle, use `npm run build` or `yarn build`.
         -->
+        <script type="text/javascript">
+            var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+                mapboxgl.accessToken = 'pk.eyJ1IjoiYmx1cmNyZWF0aXZlIiwiYSI6ImNqcmQ2cDN0dzBiYzg0M3FmY3E4NnM0bm8ifQ.ItKKVhLrdHbtJ7zfAQeG1Q';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11'
+                });
+        </script>
     </body>
 </html>
